@@ -4,11 +4,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import java.io.Serializable;
 
-public record MarcaDto(
+public class MarcaDto {
+
   @NotNull
   @NotBlank
   @JsonProperty("nome")
-  String nome) implements Serializable {
+  private String nome;
+
 }

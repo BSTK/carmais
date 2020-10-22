@@ -1,5 +1,7 @@
 package com.caqqi.carmais.veiculo.domain.entidade;
 
+import com.caqqi.carmais.core.domain.Entidade;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -10,15 +12,11 @@ public class Marca extends Entidade {
 
   public static final String SQL_TODAS_MARCAS = "SELECT * FROM MARCA";
 
-  public static final String SQL_MARCA_COM_MODELOS =
-    """
-        SELECT          M.NOME  AS MARCA,
-                        MM.NOME AS MODELO
-        FROM            MARCA M
-        LEFT JOIN       MODELO MM 
-        ON              MM.MARCA_ID = M.ID
-        ORDER BY        M.NOME;
-    """;
+  public static final String SQL_MARCA_COM_MODELOS = "SELECT M.NOME  AS MARCA, MM.NOME AS MODELO "
+          + " FROM            MARCA M "
+          + " LEFT JOIN       MODELO MM  "
+          + " ON              MM.MARCA_ID = M.ID "
+          + " ORDER BY        M.NOME";
 
   @NotNull
   @NotBlank

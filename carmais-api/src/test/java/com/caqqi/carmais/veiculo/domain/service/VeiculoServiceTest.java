@@ -1,9 +1,10 @@
 package com.caqqi.carmais.veiculo.domain.service;
 
+import com.caqqi.carmais.veiculo.domain.VeiculoService;
 import com.caqqi.carmais.veiculo.domain.entidade.Marca;
 import com.caqqi.carmais.veiculo.domain.entidade.Modelo;
 import com.caqqi.carmais.veiculo.domain.entidade.Versao;
-import com.caqqi.carmais.veiculo.domain.repository.VeiculoRepository;
+import com.caqqi.carmais.veiculo.domain.VeiculoRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -1,5 +1,7 @@
 package com.caqqi.carmais.veiculo.domain.entidade;
 
+import com.caqqi.carmais.core.domain.Entidade;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

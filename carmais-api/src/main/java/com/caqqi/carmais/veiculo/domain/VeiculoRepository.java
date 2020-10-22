@@ -1,4 +1,4 @@
-package com.caqqi.carmais.veiculo.domain.repository;
+package com.caqqi.carmais.veiculo.domain;
 
 import com.caqqi.carmais.veiculo.api.dto.MarcaComModeloDto;
 import com.caqqi.carmais.veiculo.domain.entidade.Marca;
@@ -63,7 +63,7 @@ public class VeiculoRepository {
     Objects.requireNonNull(query);
 
     final var resultado = new ArrayList<MarcaComModeloDto>();
-    query.forEach((k, v) -> resultado.add(new MarcaComModeloDto(k, v)));
+    // query.forEach((k, v) -> resultado.add(new MarcaComModeloDto(k, v)));
 
     return resultado;
   }
