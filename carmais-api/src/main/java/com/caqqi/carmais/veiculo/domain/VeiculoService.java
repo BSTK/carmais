@@ -4,7 +4,6 @@ import com.caqqi.carmais.veiculo.api.dto.MarcaComModeloDto;
 import com.caqqi.carmais.veiculo.api.dto.MarcaDto;
 import com.caqqi.carmais.veiculo.api.dto.ModeloDto;
 import com.caqqi.carmais.veiculo.api.dto.VersaoDto;
-import com.caqqi.carmais.veiculo.domain.VeiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

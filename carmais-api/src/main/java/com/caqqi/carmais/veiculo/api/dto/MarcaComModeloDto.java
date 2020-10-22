@@ -1,17 +1,21 @@
 package com.caqqi.carmais.veiculo.api.dto;
 
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+@Data
+@RequiredArgsConstructor
 public class MarcaComModeloDto {
 
   @NotNull
   @NotBlank
-  private String marca;
+  private final String marca;
 
   @NotNull
-  private List<String> modelos;
+  private final List<String> modelos;
 
 }
-

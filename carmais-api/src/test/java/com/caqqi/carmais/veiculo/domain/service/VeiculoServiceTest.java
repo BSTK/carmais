@@ -59,11 +59,11 @@ class VeiculoServiceTest {
       new Modelo(2L, "BELINA")
     );
 
-    given(veiculoRepository.modelos()).willReturn(modelos);
+    given(veiculoRepository.modelos("")).willReturn(modelos);
 
-    final var resposta = veiculoService.modelos(marca);
+    final var resposta = veiculoService.modelos("");
 
-    Mockito.verify(veiculoRepository).modelos();
+    Mockito.verify(veiculoRepository).modelos("");
 
     Assertions.assertThat(resposta).isNotNull();
     Assertions.assertThat(resposta.size()).isEqualTo(modelos.size());
